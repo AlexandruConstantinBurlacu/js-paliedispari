@@ -4,3 +4,4 @@
 // Sommiamo i due numeri
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Se l'utente ha indovinato l'esito (pari o dispari) della somma ha vinto, altrimenti ha perso.
+
