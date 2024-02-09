@@ -23,6 +23,26 @@ function vediPalindromia() {
     // gli dico che se non c'e scritto niente allora l'utente deve inserire una parola, altrimenti 
     // controlla se la parola e palindroma attraverso un'altra funzione
     if(parolaScritta === "") {
-        resultElement.textContent = "" 
+        resultElement.textContent = "Inserisci una parola"; 
+    } else {
+        const isPalindroma = controllaPalindromia(parolaScritta);
+        resultElement.textContent = isPalindroma ? "La tua parola è palindroma" : "La tua parola non è palindroma";
     }
+}
+
+// ora scrivo una funzione per verificare se la parola e palindroma
+function controllaPalindromia(parolaScritta) {
+
+    const lunghezzaParola = parolaScritta.length;
+
+    for(let i = 0; i < Math.floor(lunghezzaParola / 2); i++) {
+        if (parolaScritta[i] !== parolaScritta[lunghezzaParola - 1 - i]) {
+            return false;
+        }
+    } 
+    
+    return true;
+    
+
+
 }
