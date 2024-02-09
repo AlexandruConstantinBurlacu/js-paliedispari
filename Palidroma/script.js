@@ -9,3 +9,20 @@
 const buttonElement = document.querySelector("#verificaButton");
 
 console.log(buttonElement);
+
+// do una funzione al click del pulsante
+buttonElement.addEventListener("click", vediPalindromia);
+
+// funzione per il click del pulsante
+function vediPalindromia() {
+    const parolaElement = document.querySelector("#inserisciParola");
+    const resultElement = document.querySelector("#risultato");
+
+    const parolaScritta = parolaElement.value();
+
+    // gli dico che se non c'e scritto niente allora l'utente deve inserire una parola, altrimenti 
+    // controlla se la parola e palindroma attraverso un'altra funzione
+    if(parolaScritta === "") {
+        resultElement.textContent = "" 
+    }
+}
