@@ -3,3 +3,9 @@
 // (ad esempio, questa funzione potrebbe funzionare così: 
 // passandole la parola come parametro, farà i suoi calcoli per capire 
 // se è palindroma o meno e ci restituirà true o false in base all'esito)
+
+
+// dico che buttonelement corrisponde al pulsante presente su html
+const buttonElement = document.querySelector("#verificaButton");
+
+console.log(buttonElement);
